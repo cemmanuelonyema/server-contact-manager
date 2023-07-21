@@ -1,8 +1,12 @@
 {
   "name": "be-contact-manager",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "license": "MIT",
+  "scripts": {
+    "server": "nodemon src/server.ts",
+    "lint": "eslint . --ext .ts"
+  },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.13",
